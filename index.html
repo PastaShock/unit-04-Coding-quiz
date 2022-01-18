@@ -9,8 +9,36 @@
     <title>Document</title>
 </head>
 <body>
-    <app>
-
+    <header class="w-100">
+        <ul class="nav nav-tabs justify-content-between">
+            <li class="nav-item">
+                <h1 class="nav-link active">
+                    Coding Quiz
+                </h1>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mt-2">Restart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mt-2">Scores</a>
+            </li>
+            <li class="nav-item float-right">
+                <a id="score" class="nav-link mt-2">Score: 0</a>
+            </li>
+        </ul>
+    </header>
+    <app class="card container my-4">
+        <div class="card-body">            
+            <h2 class="" id="question">
+                Are you ready to start?
+            </h2>
+            <ul id="answers" class="list-group list-group-flush">
+                <li class="list-group-item">
+                </li>
+            </ul>
+            <button id="start" class="btn btn-primary">Start</button>
+        </div>
     </app>
+    <script src="Assets/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,6 @@
+li:hover {
+    background: #0d6efd;
+}
+li:target {
+    background: turquoise;
+}
