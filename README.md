@@ -17,4 +17,4 @@ I had trouble getting the out-of-time condition to fire like it is supposed to.
 
 I also had trouble getting the quiz to not throw an error when reaching the last question. I check and double checked but everything looked correct.
 
-![Screenshot of the finished product](Assets/Screeenshot.png)
+![Screenshot of the finished product.](Assets/Screenshot.png)
