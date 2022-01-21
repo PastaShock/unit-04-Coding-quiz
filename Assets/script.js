@@ -136,8 +136,28 @@ function submitScores() {
     initials = prompt('enter your initials');
     AnswersTracker.init = initials;
     AnswersTracker.time = timer.textContent;
-    allScores.push(storedScores += AnswersTracker);
-    localStorage.setItem('userData', JSON.stringify(allScores));
+    allScores.push(json.stringify(AnswersTracker));
+    localStorage.setItem('userData',  JSON.stringify(allScores));
+}
+
+function parseScores() {
+    var parsedScores = JSON.parse(allScores);
+    for (var i = 0; i < parsedScores.length; i++) {
+        parsedScores[i] = JSON.parse(parsedScores[i]);
+    }
+}
+
+function showScores() {
+    clearField();
+    question.textContent = 'Scores:';
+    for (var i = 0; i < allScores.length; i++) {
+        userScores = parseScores();
+        var scoreListItemRow = document.createElement('tr');
+        var scoreListItemCol = document.createElement('td');
+        for (var j = 0; j < parsedScores.length; j++) {
+            scoreListItem.textContent = 'answered correctly: ' + userScores[j];
+        }
+    }
 }
 
 initializeGame();
